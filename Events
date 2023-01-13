@@ -6,7 +6,7 @@ namespace Randomizer {
     /**
             * A seventy-five percent chance event.
             */
-    //% block="if 75 percent do"
+    //% block="if 75 percent chance do"
     export function seventyFivePercentChance(handler: () => void) {
         if (Math.percentChance(75)) {
             handler()
@@ -17,7 +17,7 @@ namespace Randomizer {
     /**
          * A fifty percent chance event.
          */
-    //% block="if 50 percent do"
+    //% block="if 50 percent chance do"
     export function fiftyPercentChance(handler: () => void) {
         if (Math.percentChance(50)) {
             handler()
@@ -27,7 +27,7 @@ namespace Randomizer {
     /**
             * A twenty-five percent chance event.
             */
-    //% block="if 25 percent do"
+    //% block="if 25 percent chance do"
     export function twentyFivePercentChance(handler: () => void) {
         if (Math.percentChance(25)) {
             handler()
