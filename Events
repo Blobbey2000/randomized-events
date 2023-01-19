@@ -1,5 +1,5 @@
 
-//% color="#DDA977"
+//% color="#99AAA3"
 //% icon="\uf295"
 namespace Chances {
 
@@ -34,5 +34,16 @@ namespace Chances {
         }
     }
 
+        /**
+         * A custom chance event.
+         */
+        //% block="on event with chance $numbers"
+        export function onEventWithArgs(numbers: number, handler: () => void) {
+            if (Math.percentChance(numbers)) {
+                handler();
+            }
 
-}
+        }
+
+    }
+
