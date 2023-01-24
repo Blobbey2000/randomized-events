@@ -1,49 +1,16 @@
-
 //% color="#99AAA3"
 //% icon="\uf295"
 namespace Chances {
 
     /**
-            * A seventy-five percent chance event.
-            */
-    //% block="75 percent chance do"
-    export function seventyFivePercentChance(handler: () => void) {
-        if (Math.percentChance(75)) {
-            handler()
-        }
-    }
-
-
-    /**
-         * A fifty percent chance event.
-         */
-    //% block="50 percent chance do"
-    export function fiftyPercentChance(handler: () => void) {
-        if (Math.percentChance(50)) {
-            handler()
-        }
-    }
-
-    /**
-            * A twenty-five percent chance event.
-            */
-    //% block="25 percent chance do"
-    export function twentyFivePercentChance(handler: () => void) {
-        if (Math.percentChance(25)) {
-            handler()
-        }
-    }
-
-        /**
-         * A custom chance event.
-         */
-        //% block="on event with chance $numbers"
-        export function onEventWithArgs(numbers: number, handler: () => void) {
-            if (Math.percentChance(numbers)) {
-                handler();
-            }
-
+     * A custom chance event.
+     */
+    //% block="on event with chance $numbers"
+    export function onEventWithArgs(numbers: number, handler: () => void) {
+        if (Math.percentChance(numbers)) {
+            handler();
         }
 
     }
 
+}
