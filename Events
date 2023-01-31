@@ -6,7 +6,7 @@ namespace Chances {
      * A custom chance event.
      */
     //% block="on event with chance $numbers"
-    export function onEventWithArgs(numbers: number, handler: () => void) {
+    export function onEventWithChance(numbers: number, handler: () => void) {
         if (Math.percentChance(numbers)) {
             handler();
         }
