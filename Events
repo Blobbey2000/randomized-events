@@ -1,16 +1,23 @@
-//% color="#093FA3"
+//% color="#91463D"
 //% icon="\uf295"
 namespace Chances {
-
-    /**
-     * A custom chance event.
-     */
-    //% block="on event with chance $numbers"
-    export function onEventWithChance(numbers: number, handler: () => void) {
-        if (Math.percentChance(numbers)) {
-            handler();
-        }
-
-    }
-
+/**
+* A custom chance event.
+*/
+//% block="on event with chance $chance percent do"
+export function onEventWithChance(chance: number, handler: () => void) {
+if (Math.percentChance(chance)) {
+handler();
+}
+}
+/**
+* A custom chance.
+*/
+//% block="on chance $numbers percent do"
+//% handlerStatement=1
+export function onChance(numbers: number, handler: () => void) {
+if (Math.percentChance(numbers)) {
+handler();
+}
+}
 }
