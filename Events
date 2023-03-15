@@ -10,6 +10,7 @@ if (Math.percentChance(chance)) {
 handler();
 }
 }
+
 /**
 * A custom chance.
 */
